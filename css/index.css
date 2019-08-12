@@ -328,16 +328,20 @@ footer {
   #home nav {
     flex-direction: column;
   }
-  .center{
+  .navLinks {
+    width: auto;
     margin: 0 auto;
   }
-  .logo {
-    width: 50%;
+  .center{
+    margin: 0 auto;
   }
   .container img {
     display: none;
   }
   /**** Main Section ***/
+  .column-1 {
+    margin: 20px 10px;
+  }
   .column-2 {
     margin: 10px;
   }
@@ -350,5 +354,39 @@ footer {
   }
   .wrapper img {
     width: 92%;
+  }
+}
+
+/* Phone Mobile Queries */
+
+@media only screen and (max-width: 500px) {
+  .navLinks {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .navLinks a {
+    padding: 10px 100px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+  .container h1 {
+    font-size: 60px;
+  }
+  .services-header-img {
+    display: none;
+  }
+  .row{
+    flex-direction: column;
+  }
+  .column-1 {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .column-2 {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .children {
+    width: 100%;
   }
 }
