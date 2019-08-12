@@ -148,7 +148,8 @@ body {
 	height: 100%;
 	font-family: 'Titillium Web', sans-serif;
 	max-width: 90%;
-	margin: 0 auto;
+  margin: 0 auto;
+  
 }
 
 p {
@@ -320,3 +321,34 @@ footer {
 }
 
 
+/* Table Media Queries */
+
+@media only screen and (max-width: 800px) {
+  /*****NavBar******/
+  #home nav {
+    flex-direction: column;
+  }
+  .center{
+    margin: 0 auto;
+  }
+  .logo {
+    width: 50%;
+  }
+  .container img {
+    display: none;
+  }
+  /**** Main Section ***/
+  .column-2 {
+    margin: 10px;
+  }
+  /*****Services Style****/
+  .children {
+    width: 43%;
+  }
+  .wrapper p {
+    width: 321px;
+  }
+  .wrapper img {
+    width: 92%;
+  }
+}
